@@ -1,0 +1,44 @@
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    &_fz14{
+        color: #fff; 
+        font-size: 14px;
+        line-height: 21px;
+        &_location{
+            color: black;
+        }
+
+    }
+    &_fz16 {
+        color: #fff; 
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fz20{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fz48 {
+        font-size: 48px;
+        color: #fff; 
+    }
+    &_about{
+        color: black;
+    }
+    &__section-title{
+        position: relative;
+        text-align: center;
+        color: black;
+        @include before-circle;
+        &:before{
+            top:-6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle{
+        text-align: center;
+    }
+}
